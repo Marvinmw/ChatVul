@@ -6,7 +6,7 @@ This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract
 - environment `environment.yml`
   * `environment.yml` contains some packages related to cuda libraries and maybe you do not want them.
   * You need install the following packages, `langchain`, `python-dotenv`, `tree-sitter`, `tiktoken`, `openai`
-- edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`
+- edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`. Be careful and never leak your YOUR_KEY_ID.
 
 ## Detection Model
     - tow types of prompt, `oneshot` and `concept`
