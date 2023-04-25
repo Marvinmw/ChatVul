@@ -1,4 +1,5 @@
-This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract in Solidity.
+## Introduction
+This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract in Solidity. It use *Apache Open license*.
 
 ## Set UP
 - You need git submodule clone utils/tree-sitter-solidity, and then `cd utils && python build.py`
@@ -16,7 +17,7 @@ This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract
             please see the folder `datasets/checklist/smart-contract-vulnerabilities/vulnerabilities`
             each markdown file *.md contains one vul type details.
             For example, [arbitray-jump-function-type](datasets/checklist/smart-contract-vulnerabilities/vulnerabilities/arbitrary-jump-function-type.md)
-    - We use the vul resouces from Github.
+    - We use the vul resouces from Github. Becasue we do not save the links, if you find your vul resouces are used by us, please touch me.
 
 ## Custom CheckList
 
