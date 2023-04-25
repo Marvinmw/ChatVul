@@ -4,6 +4,8 @@ This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract
 ## Set UP
 - You need git submodule clone utils/tree-sitter-solidity, and then `cd utils && python build.py`
 - environment `environment.yml`
+  * `environment.yml` contains some packages related to cuda libraries and maybe you do not want them.
+  * You need install the following packages, `langchain`, `python-dotenv`, `tree-sitter`, `tiktoken`, `openai`
 - edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`
 
 ## Detection Model
