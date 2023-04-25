@@ -58,7 +58,7 @@ chatgpt_vul_dector, options
 
 #### Lost: $8.2 million
 
-Testing
+Detecting
 
 ```sh
 project_folder='example/ivistor/contracts' 
@@ -76,7 +76,7 @@ python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/not-so-s
 
 We list two reports realted to the real vulnerability exploied by the hacker. More details plase see the folder `example/ivistor/contracts/chatgpt`
 
-[Detected Real Issue 1](example/ivistor/contracts/chatgpt/not-so-smart-contracts/RewardsHypervisor/denial_of_service_answer.md)
+[Detected Real Issue 1](example/ivistor/contracts/chatgpt/not-so-smart-contracts/RewardsHypervisor/denial_of_service_answer.md) | 
 [Detected Real Issue 2](example/ivistor/contracts/chatgpt/alchemy/RewardsHypervisor/delegatecall_answer.md)
 
 #### Vul Code
@@ -125,6 +125,8 @@ https://etherscan.io/tx/0x69272d8c84d67d1da2f6425b339192fa472898dce936f24818fda4
 
 #### Lost $29k
 
+Detecting
+
 ```sh
 project_folder='example/n00dToken/contracts' 
 max_len=1000
@@ -141,7 +143,7 @@ python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/not-so-s
 
 We list two reports realted to the real vulnerability exploied by the hacker. More details plase see the folder `example/n00dToken/contracts/chatgpt`
 
-[Detected Real Issue 1](example/n00dToken/contracts/chatgpt/not-so-smart-contracts/n00dToken/honeypost_GiftBox_answer.md)
+[Detected Real Issue 1](example/n00dToken/contracts/chatgpt/not-so-smart-contracts/n00dToken/honeypost_GiftBox_answer.md) | 
 [Detected Real Issue 2](example/n00dToken/contracts/chatgpt/vulnerabilities/n00dToken/arbitrary-jump-function-type_answer.md)
 
 #### Vul Code
