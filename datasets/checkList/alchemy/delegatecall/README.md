@@ -1,0 +1,4 @@
+Delegatecall is identical to a message call except that the code at the target address is executed in the context of the calling contract and the values of msg.sender and msg.value are not changed.
+Delegatecall has been extremely useful because it serves as the foundation for implementing libraries and modularizing code. Delegatecall also allows a contract to dynamically load code from a different address, however it introduces vulnerabilities because a contract essentially allows anyone to do anything they want with their state resulting in unexpected code execution.
+In the example below, when contract B executes the delegatecall function to contract A, the code of contract A is executed but with contract B’s storage.
+delegatecall affects the state variables of the contract that calls a function with delegatecall. The state variables of the contract that holds the functions that are borrowed are not read or written.

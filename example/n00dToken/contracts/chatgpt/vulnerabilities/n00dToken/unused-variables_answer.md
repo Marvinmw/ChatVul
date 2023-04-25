@@ -1,0 +1,11 @@
+
+
+## Vulnerability Type: Unused Variables
+
+### Vulnerability Description
+
+The smart contract contains unused variables, such as `_TOKENS_SENDER_INTERFACE_HASH`, `_TOKENS_RECIPIENT_INTERFACE_HASH`, and `_revokedDefaultOperators`. These variables are not used in the code and can lead to an increase in computations, decreased code readability, and indicate bugs or malformed data structures.
+
+### Recommendations
+
+It is recommended to remove all unused variables from the code base to avoid unnecessary gas consumption, improve code readability, and prevent potential bugs or malformed data structures.

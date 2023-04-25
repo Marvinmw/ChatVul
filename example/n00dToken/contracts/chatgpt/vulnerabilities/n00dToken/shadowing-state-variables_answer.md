@@ -1,0 +1,11 @@
+
+
+## Vulnerability Type: Shadowing State Variables
+
+In the `n00dToken` contract, the `_name` and `_symbol` variables are defined again, even though they are already defined in the `ERC777` contract. This can lead to unintended side effects, as the value of `_name` and `_symbol` in `n00dToken` will override the value of `_name` and `_symbol` in `ERC777`. This can cause issues if any functionality in `ERC777` relies on the original values of `_name` and `_symbol`.
+
+To avoid this vulnerability, it's important to avoid defining state variables with the same name in child contracts as in parent contracts. In this case, the `n00dToken` contract should not define `_name` and `_symbol` again, as they are already defined in `ERC777`.
+
+### Reference
+
+- https://swcregistry.io/docs/SWC-119

@@ -1,0 +1,3 @@
+Block timestamps have been used historically for a number of purposes, including entropy for random numbers locking funds for a set amount of time, and different state-changing, time-dependent conditional statements. Because validators have the capacity to slightly alter timestamps, using block timestamps wrong in smart contracts can be quite risky.
+
+The time difference between events can be estimated using block.number and the average block time. However, because block times can change and break functionality, it's best to avoid its use.

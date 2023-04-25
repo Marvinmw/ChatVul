@@ -1,0 +1,1 @@
+[["use-of-deprecated-functions", "\n\n## Vulnerability Type: Use of Deprecated Functions\n\nThe code does not contain any use of deprecated functions. Therefore, there is no vulnerability of this type in the code."]]

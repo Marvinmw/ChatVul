@@ -1,0 +1,27 @@
+
+
+## Vulnerability Report
+
+### Outdated Compiler Version
+
+Severity: Informational
+
+Description: The smart contract uses Solidity version ^0.8.0, which is not the latest version available at the time of writing this report. Using an outdated compiler version may result in vulnerabilities that have already been fixed in newer versions. It is recommended to use the latest stable version of the Solidity compiler to ensure the security of the smart contract.
+
+### Re-Entrancy Vulnerability
+
+Severity: High
+
+Description: The `_move` function is called by the `_send` function, which is called by the `send` and `transfer` functions. The `_move` function updates the balances of the sender and recipient addresses. If the recipient address is a contract, it may call back into the smart contract and execute malicious code before the `_move` function completes. This can result in the recipient address being credited with more tokens than it should have. To prevent this, the smart contract should use the checks-effects-interactions pattern to ensure that the `_move` function completes before any external calls are made.
+
+### Integer Overflow/Underflow Vulnerability
+
+Severity: Medium
+
+Description: The `_totalSupply` variable is incremented and decremented in the `_mint` and `_burn` functions, respectively. If the `_totalSupply` variable overflows or underflows, it may result in unexpected behavior and vulnerabilities. To prevent this, the smart contract should use the `SafeMath` library to perform arithmetic operations on the `_totalSupply` variable.
+
+### Lack of Access Control
+
+Severity: Medium
+
+Description: The `authorizeOperator` and `revokeOperator` functions allow any address to authorize or revoke an operator for any address. This can result in unauthorized access to the smart contract and vulnerabilities. To prevent this, the smart contract should implement access control mechanisms to ensure that only authorized addresses can call these functions.

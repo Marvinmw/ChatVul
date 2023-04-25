@@ -1,0 +1,2 @@
+An integer would automatically roll over to a lower or higher number in Solidity versions prior to 0.8.0. If you decremented 0 by 1 (0-1) on an unsigned number, the outcome would simply be: MAX instead of -1 or an error.
+The easiest way is to use at least a 0.8 version of the Solidity compiler. In Solidity 0.8, the compiler will automatically take care of checking for overflows and underflows.
