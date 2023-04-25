@@ -1,6 +1,7 @@
 This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract in Solidity.
 
 ## Set UP
+- You need git submodule clone utils/tree-sitter-solidity, and then `cd utils && python build.py`
 - environment `environment.yml`
 - edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`
 
