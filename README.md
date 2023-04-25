@@ -25,8 +25,10 @@ The aim of this project is to leverage ChatGPT to identify vulnerabilities in So
 
 If you want to add yourself checklist, you can 
 
-    - create a parenet folder and then for each vul type, you can create a subfolder. 
-    - In the subfolder, you describe the vul type. And if you want to use the example codel, please provide it in *.sol file. 
+    - create a parent folder and then for each vul type, you can create a subfolder. 
+    - In the subfolder, you describe the vul type in `README.md`. And if you want to use the example codel, please provide it in *.sol file. 
+
+Please see the checklist examples in the folder 'datasets/checklist'.
 
 ## Run commands
 
