@@ -1,3 +1,5 @@
+This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract in Solidity.
+
 ## Set UP
 - environment `environment.yml`
 - edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`
@@ -31,7 +33,7 @@ python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/alchemy 
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/not-so-smart-contracts  -l ${max_len} -o ./tmp
 ```
 
-The output folder is in `./tmp`
+The output is in `./tmp`
 
 
 chatgpt_vul_dector, options
