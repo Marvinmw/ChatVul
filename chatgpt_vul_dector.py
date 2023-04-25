@@ -73,8 +73,6 @@ def load_vul_examples(vul_folder= "datasets/solidity_vul/not-so-smart-contracts"
     elif query_method == "concept":
         for vul_type in os.listdir(vul_folder):
             vul_type_path = os.path.join( vul_folder, vul_type)
-            #sfile=list(glob.glob( f"{vul_type_path}/**/*.md", recursive=True))[0]
-            # for sfile in glob.glob( f"{vul_type_path}/**/*.md", recursive=True):
             details = open(vul_type_path).read()
             v = vul_type.replace(".md", "")
             vul_code[v]=( {"details":details} )
