@@ -1,5 +1,5 @@
 ## Introduction
-This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract in Solidity. It use *Apache Open license*.
+This proejct is to utilize ChatGPT to detect the vulernability of Smart Contract in Solidity. It use *Apache Open license*. We successfully find the real vulnerabilities exploited by the hackers ( see the examples ).
 
 ## Set UP
 - You need git submodule clone utils/tree-sitter-solidity, and then `cd utils && python build.py`
