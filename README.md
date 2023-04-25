@@ -195,5 +195,4 @@ https://twitter.com/AnciliaInc/status/1584955717877784576
 
 
 ## To DO
-The project is quite early. We need consider how extract the context for a big project (static and dynamic analysis).
-Please feel free touch with me and send me a PR or email.
+Since the project is still in its early stages, it is crucial to determine how to extract the context for a large project that involves static and dynamic analysis. We welcome any feedback or suggestions on this matter and encourage you to get in touch with us via email or pull request on our GitHub repository. Your input will be valuable in enhancing the effectiveness of the project.
