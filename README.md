@@ -15,7 +15,7 @@ Since the project is still in its early stages, it is crucial to determine how t
   * You need install the following packages, `langchain`, `python-dotenv`, `tree-sitter`, `tiktoken`, `openai`
 - edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`. Be careful and never leak your YOUR_KEY_ID.
 
-## Detection Model
+## Detection Option
     - tow types of prompt, `oneshot` and `concept`
         - `oneshot` needs the example code, 
             please see the folder `datasets/checklist/not-so-smart-contracts` and `datasets/checklist/ not-so-smart-contracts`.
