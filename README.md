@@ -1,6 +1,10 @@
 ## Introduction
 The aim of this project is to leverage ChatGPT to identify vulnerabilities in Solidity-based Smart Contracts. The project is licensed under Apache Open License. We are proud to report that we have successfully detected real vulnerabilities that have been exploited by hackers (examples are provided).
 
+## Features
+- The results are human-readable, unlike other tools such as Slither. 
+- It is highly flexible, making it simple to add your own checklist of vulnerability types that you want to check for.
+
 ## Set UP
 - You need git submodule clone utils/tree-sitter-solidity, and then `cd utils && python build.py`
 - environment `environment.yml`
