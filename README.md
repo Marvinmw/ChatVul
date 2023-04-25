@@ -29,7 +29,7 @@ If you want to add yourself checklist, you can
     - Option 1. Assume you want to inlucde the example code, `-q oneshot` and `-q concept`. For each vul type, you can create a subfolder. In each subfolder, you describe the vul type in `README.md`. And if you want to use the example codel,   please provide it in *.sol file. Please see the examples, `datasets/checklist/alchemy` and ` datasets/checklist/not-so-smart-contracts`.
     - Option 2. Assume you only want to inlucde the vul concept, `-q concept`.  You just create a markdown file to describe each vul type in parent folder. Please see the example `datasets/checklist/smart-contract-vulnerabilities/ vulnerabilities`
 
-Please see the checklist examples in the folder 'datasets/checklist'. In the 
+Please see the checklist examples in the folder 'datasets/checklist'.
 
 ## Run commands
 
