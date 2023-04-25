@@ -29,7 +29,8 @@ If you want to add yourself checklist, you can
 ## Run commands
 
 ```
-project_folder='datasets/checklist/hack_projects/ivistor/contracts' 
+project_folder='example/ivistor/contracts' 
+max_len=1000
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/smart-contract-vulnerabilities/vulnerabilities -q concept -l ${max_len} -o ./tmp
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/alchemy -l ${max_len}  -o ./tmp
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/not-so-smart-contracts  -l ${max_len} -o ./tmp
@@ -59,6 +60,7 @@ Testing
 
 ```sh
 project_folder='example/ivistor/contracts' 
+max_len=1000
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/smart-contract-vulnerabilities/vulnerabilities -q concept -l ${max_len} -o example/ivistor/contracts/chatgpt
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/alchemy -l ${max_len}  -o example/ivistor/contracts/chatgpt
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/not-so-smart-contracts  -l ${max_len} -o example/ivistor/contracts/chatgpt
@@ -123,6 +125,7 @@ https://etherscan.io/tx/0x69272d8c84d67d1da2f6425b339192fa472898dce936f24818fda4
 
 ```sh
 project_folder='example/n00dToken/contracts' 
+max_len=1000
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/smart-contract-vulnerabilities/vulnerabilities -q concept -l ${max_len} -o example/n00dToken/contracts/chatgpt
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/alchemy -l ${max_len}  -o example/n00dToken/contracts/chatgpt
 python chatgpt_vul_dector.py -p ${project_folder} -c datasets/checklist/not-so-smart-contracts  -l ${max_len} -o example/n00dToken/contracts/chatgpt

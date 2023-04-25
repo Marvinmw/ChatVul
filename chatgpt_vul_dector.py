@@ -183,7 +183,7 @@ if __name__ == "__main__":
     parser.add_argument("-l", "--max_len",type=int, default=1000 )
     args = parser.parse_args()
     chat = ChatOpenAI(temperature=0, max_tokens=args.max_len)
-    process_solidity_chat(args.project, args.check, args.query, args.output)
+    process_solidity_chat(args.project, args.checklist, args.query, args.output)
    
 
 
