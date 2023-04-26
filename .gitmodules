@@ -1,0 +1,3 @@
+[submodule "tools/smartcheck"]
+	path = tools/smartcheck
+	url = https://github.com/smartdec/smartcheck.git
