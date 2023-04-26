@@ -1,6 +1,13 @@
 ## Introduction
 The aim of this project is to leverage ChatGPT to identify vulnerabilities in Solidity-based Smart Contracts. The project is licensed under Apache Open License. We are proud to report that we have successfully detected real vulnerabilities that have been exploited by hackers (examples are provided).
 
+## Features
+- The results are human-readable, unlike other tools such as Slither. 
+- It is highly flexible, making it simple to add your own checklist of vulnerability types that you want to check for.
+
+## To DO
+Since the project is still in its early stages, it is crucial to determine how to extract the context for a large project that involves static and dynamic analysis. We welcome any feedback or suggestions on this matter and encourage you to get in touch with us via email or pull request on our GitHub repository. Your input will be valuable in enhancing the effectiveness of the project.
+
 ## Set UP
 - You need git submodule clone utils/tree-sitter-solidity, and then `cd utils && python build.py`
 - environment `environment.yml`
@@ -8,7 +15,7 @@ The aim of this project is to leverage ChatGPT to identify vulnerabilities in So
   * You need install the following packages, `langchain`, `python-dotenv`, `tree-sitter`, `tiktoken`, `openai`
 - edit .env file and set your API Key, `OPENAI_API_KEY=YOUR_KEY_ID`. Be careful and never leak your YOUR_KEY_ID.
 
-## Detection Model
+## Detection Option
     - tow types of prompt, `oneshot` and `concept`
         - `oneshot` needs the example code, 
             please see the folder `datasets/checklist/not-so-smart-contracts` and `datasets/checklist/ not-so-smart-contracts`.
@@ -200,6 +207,3 @@ https://twitter.com/BlockSecTeam/status/1584959295829180416
 
 https://twitter.com/AnciliaInc/status/1584955717877784576
 
-
-## To DO
-Since the project is still in its early stages, it is crucial to determine how to extract the context for a large project that involves static and dynamic analysis. We welcome any feedback or suggestions on this matter and encourage you to get in touch with us via email or pull request on our GitHub repository. Your input will be valuable in enhancing the effectiveness of the project.
