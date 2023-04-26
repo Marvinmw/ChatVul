@@ -6,6 +6,8 @@ The aim of this project is to leverage ChatGPT to identify vulnerabilities in So
 - It is highly flexible, making it simple to add your own checklist of vulnerability types that you want to check for.
 
 ## To DO
+- on-going, integrating SmartChecker
+
 Since the project is still in its early stages, it is crucial to determine how to extract the context for a large project that involves static and dynamic analysis. We welcome any feedback or suggestions on this matter and encourage you to get in touch with us via email or pull request on our GitHub repository. Your input will be valuable in enhancing the effectiveness of the project.
 
 ## Set UP
